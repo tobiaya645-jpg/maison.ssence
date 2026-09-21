@@ -1,214 +1,301 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maison Essence — Perfumería</title>
-  <meta name="description" content="Maison Essence. Un universo de fragancias seleccionadas. Más que perfumes, es tu esencia.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison Essence — Perfumería</title>
+    <meta name="description" content="Maison Essence. Un universo de fragancias seleccionadas. Más que perfumes, es tu esencia.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container header-inner">
-        <a href="index.html" class="logo">
-            <img src="assets/logo/logo-1.jpg" alt="" class="logo-img">
-            <span class="logo-text">
-                <span class="logo-main">MAISON</span>
-                <span class="logo-sub">Essence</span>
-            </span>
-        </a>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="assets/logo/logo-1.jpg" alt="" class="logo-img">
+                <span class="logo-text">
+                    <span class="logo-main">MAISON</span>
+                    <span class="logo-sub">Essence</span>
+                </span>
+            </a>
 
-      <nav class="nav">
-        <a href="index.html" class="active">Inicio</a>
-        <a href="pages/disenador.html">Diseñador</a>
-        <a href="pages/arabes.html">Árabes</a>
-        <a href="pages/dama.html">Dama</a>
-      </nav>
+            <nav class="nav">
+                <a href="index.html" class="active">Inicio</a>
+                <a href="pages/disenador.html">Diseñador</a>
+                <a href="pages/arabes.html">Árabes</a>
+                <a href="pages/dama.html">Dama</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#faq">FAQ</a>
+            </nav>
 
-      <div class="header-actions">
-        <button class="cart-btn" onclick="openCart()" aria-label="Ver cotización">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-            <line x1="3" y1="6" x2="21" y2="6"/>
-            <path d="M16 10a4 4 0 01-8 0"/>
-          </svg>
-          <span class="cart-count" style="display:none">0</span>
-        </button>
-        <button class="menu-toggle" onclick="openMobileNav()" aria-label="Menú">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <!-- MOBILE NAV -->
-  <div class="mobile-nav" id="mobile-nav">
-    <button class="mobile-nav-close" onclick="closeMobileNav()">✕</button>
-    <a href="index.html" onclick="closeMobileNav()">Inicio</a>
-    <a href="pages/disenador.html" onclick="closeMobileNav()">Diseñador</a>
-    <a href="pages/arabes.html" onclick="closeMobileNav()">Árabes</a>
-    <a href="pages/dama.html" onclick="closeMobileNav()">Dama</a>
-  </div>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <span class="hero-badge">Perfumería</span>
-      <h1>Más que perfumes,<br><span class="gold">es tu esencia</span></h1>
-      <p>Un universo de fragancias seleccionadas para quienes buscan autenticidad, elegancia y presencia en cada detalle.</p>
-      <div class="hero-actions">
-        <a href="pages/disenador.html" class="btn btn-primary">Explorar catálogo</a>
-        <a href="#generos" class="btn btn-outline">Ver colecciones</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- GENDER SECTIONS -->
-  <section class="section" id="generos">
-    <div class="container">
-      <div class="text-center">
-        <h2 class="section-title">Elige tu colección</h2>
-        <p class="section-subtitle">Fragancias curadas para cada presencia</p>
-      </div>
-
-      <div class="gender-grid">
-        <a href="pages/disenador.html" class="gender-card">
-          <div class="gender-card-bg">
-            <span class="gender-icon">♂</span>
-          </div>
-          <div class="gender-card-content">
-            <h3>Caballero</h3>
-            <p>Diseñador y Árabes. Presencia, carácter y distinción.</p>
-            <span class="btn btn-sm btn-outline">Explorar →</span>
-          </div>
-        </a>
-
-        <a href="pages/dama.html" class="gender-card">
-          <div class="gender-card-bg">
-            <span class="gender-icon">♀</span>
-          </div>
-          <div class="gender-card-content">
-            <h3>Dama</h3>
-            <p>Elegancia, sensualidad y fragancias que dejan huella.</p>
-            <span class="btn btn-sm btn-outline">Explorar →</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- POPULAR -->
-  <section class="section" style="padding-top:0">
-    <div class="container">
-      <div class="text-center">
-        <h2 class="section-title">Perfumes populares</h2>
-        <p class="section-subtitle">Los más buscados de nuestra selección</p>
-      </div>
-
-      <div class="products-grid" id="popular-products">
-        <!-- Rendered by JS -->
-      </div>
-    </div>
-  </section>
-
-  <!-- CATEGORIES QUICK -->
-  <section class="section" style="background:var(--black-soft);border-top:1px solid rgba(201,169,98,0.08);border-bottom:1px solid rgba(201,169,98,0.08)">
-    <div class="container">
-      <div class="text-center">
-        <h2 class="section-title">Nuestras categorías</h2>
-        <p class="section-subtitle">Encuentra tu fragancia ideal</p>
-      </div>
-
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;max-width:900px;margin:0 auto">
-        <a href="pages/disenador.html" class="btn btn-dark" style="padding:28px;flex-direction:column;gap:8px">
-          <span style="font-family:var(--font-serif);font-size:1.3rem;letter-spacing:0.06em">Diseñador</span>
-          <span style="font-size:0.8rem;color:var(--gray);text-transform:none;letter-spacing:0">Versace, Valentino, Rabanne y más</span>
-        </a>
-        <a href="pages/arabes.html" class="btn btn-dark" style="padding:28px;flex-direction:column;gap:8px">
-          <span style="font-family:var(--font-serif);font-size:1.3rem;letter-spacing:0.06em">Árabes</span>
-          <span style="font-size:0.8rem;color:var(--gray);text-transform:none;letter-spacing:0">Fragancias orientales y de nicho</span>
-        </a>
-        <a href="pages/dama.html" class="btn btn-dark" style="padding:28px;flex-direction:column;gap:8px">
-          <span style="font-family:var(--font-serif);font-size:1.3rem;letter-spacing:0.06em">Dama</span>
-          <span style="font-size:0.8rem;color:var(--gray);text-transform:none;letter-spacing:0">Colección femenina exclusiva</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="logo">
-            <span class="logo-main">MAISON</span>
-            <span class="logo-sub">Essence</span>
-          </a>
-          <p>Un universo de fragancias seleccionadas. Experimenta. Descubre. Define tu esencia.</p>
+            <div class="header-actions">
+                <button class="cart-btn" onclick="openCart()" aria-label="Ver cotización">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <path d="M16 10a4 4 0 01-8 0" />
+                    </svg>
+                    <span class="cart-count" style="display:none">0</span>
+                </button>
+                <button class="menu-toggle" onclick="openMobileNav()" aria-label="Menú">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
-        <div>
-          <h4>Colecciones</h4>
-          <div class="footer-links">
-            <a href="pages/disenador.html">Diseñador</a>
-            <a href="pages/arabes.html">Árabes</a>
-            <a href="pages/dama.html">Dama</a>
-          </div>
-        </div>
-        <div>
-          <h4>Contacto</h4>
-          <div class="footer-links">
-              <a href="https://wa.me/526251220282" target="_blank" rel="noopener">WhatsApp</a>
-              <a href="https://www.instagram.com/maison_esscence/" target="_blank" rel="noopener">Instagram</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        © 2026 Maison Essence. Todos los derechos reservados.
-      </div>
-    </div>
-  </footer>
+    </header>
 
-  <!-- CART DRAWER -->
-  <div class="cart-overlay" id="cart-overlay" onclick="closeCart()"></div>
-  <aside class="cart-drawer" id="cart-drawer">
-    <div class="cart-header">
-      <h3>Tu cotización</h3>
-      <button class="cart-close" onclick="closeCart()" aria-label="Cerrar">✕</button>
+    <!-- MOBILE NAV -->
+    <div class="mobile-nav" id="mobile-nav">
+        <button class="mobile-nav-close" onclick="closeMobileNav()">✕</button>
+        <a href="index.html" onclick="closeMobileNav()">Inicio</a>
+        <a href="pages/disenador.html" onclick="closeMobileNav()">Diseñador</a>
+        <a href="pages/arabes.html" onclick="closeMobileNav()">Árabes</a>
+        <a href="pages/dama.html" onclick="closeMobileNav()">Dama</a>
+        <a href="#nosotros" onclick="closeMobileNav()">Nosotros</a>
+        <a href="#faq" onclick="closeMobileNav()">FAQ</a>
     </div>
-    <div class="cart-body">
-      <div class="cart-empty" id="cart-empty">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-          <line x1="3" y1="6" x2="21" y2="6"/>
-          <path d="M16 10a4 4 0 01-8 0"/>
-        </svg>
-        <p>Aún no has agregado perfumes</p>
-        <p style="font-size:0.85rem;margin-top:8px">Explora el catálogo y agrega los que te gusten</p>
-      </div>
-      <div id="cart-items"></div>
-    </div>
-    <div class="cart-footer" id="cart-footer" style="display:none">
-      <div class="cart-total">
-        <span>Total estimado</span>
-        <span id="cart-total-value">Por cotizar</span>
-      </div>
-      <button class="btn btn-primary btn-full" onclick="sendWhatsAppQuote()">
-        Enviar cotización por WhatsApp
-      </button>
-      <p style="text-align:center;font-size:0.75rem;color:var(--gray);margin-top:12px">
-        Se abrirá WhatsApp con tu lista lista para enviar
-      </p>
-    </div>
-  </aside>
 
-  <script src="js/products.js"></script>
-  <script src="js/cart.js"></script>
-  <script src="js/main.js"></script>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-badge">Perfumería</span>
+            <h1>Más que perfumes,<br><span class="gold">es tu esencia</span></h1>
+            <p>Un universo de fragancias seleccionadas para quienes buscan autenticidad, elegancia y presencia en cada detalle.</p>
+            <div class="hero-actions">
+                <a href="pages/disenador.html" class="btn btn-primary">Explorar catálogo</a>
+                <a href="#generos" class="btn btn-outline">Ver colecciones</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GENDER SECTIONS -->
+    <section class="section" id="generos">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Elige tu colección</h2>
+                <p class="section-subtitle">Fragancias curadas para cada presencia</p>
+            </div>
+
+            <div class="gender-grid">
+                <a href="pages/disenador.html" class="gender-card">
+                    <div class="gender-card-bg">
+                        <span class="gender-icon">♂</span>
+                    </div>
+                    <div class="gender-card-content">
+                        <h3>Caballero</h3>
+                        <p>Diseñador y Árabes. Presencia, carácter y distinción.</p>
+                        <span class="btn btn-sm btn-outline">Explorar →</span>
+                    </div>
+                </a>
+
+                <a href="pages/dama.html" class="gender-card">
+                    <div class="gender-card-bg">
+                        <span class="gender-icon">♀</span>
+                    </div>
+                    <div class="gender-card-content">
+                        <h3>Dama</h3>
+                        <p>Elegancia, sensualidad y fragancias que dejan huella.</p>
+                        <span class="btn btn-sm btn-outline">Explorar →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- POPULAR -->
+    <section class="section" style="padding-top:0">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Perfumes populares</h2>
+                <p class="section-subtitle">Los más buscados de nuestra selección</p>
+            </div>
+
+            <div class="products-grid" id="popular-products">
+                <!-- Rendered by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES QUICK -->
+    <section class="section" style="background:var(--black-soft);border-top:1px solid rgba(201,169,98,0.08);border-bottom:1px solid rgba(201,169,98,0.08)">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Nuestras categorías</h2>
+                <p class="section-subtitle">Encuentra tu fragancia ideal</p>
+            </div>
+
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;max-width:900px;margin:0 auto">
+                <a href="pages/disenador.html" class="btn btn-dark" style="padding:28px;flex-direction:column;gap:8px">
+                    <span style="font-family:var(--font-serif);font-size:1.3rem;letter-spacing:0.06em">Diseñador</span>
+                    <span style="font-size:0.8rem;color:var(--gray);text-transform:none;letter-spacing:0">Versace, Valentino, Rabanne y más</span>
+                </a>
+                <a href="pages/arabes.html" class="btn btn-dark" style="padding:28px;flex-direction:column;gap:8px">
+                    <span style="font-family:var(--font-serif);font-size:1.3rem;letter-spacing:0.06em">Árabes</span>
+                    <span style="font-size:0.8rem;color:var(--gray);text-transform:none;letter-spacing:0">Fragancias orientales y de nicho</span>
+                </a>
+                <a href="pages/dama.html" class="btn btn-dark" style="padding:28px;flex-direction:column;gap:8px">
+                    <span style="font-family:var(--font-serif);font-size:1.3rem;letter-spacing:0.06em">Dama</span>
+                    <span style="font-size:0.8rem;color:var(--gray);text-transform:none;letter-spacing:0">Colección femenina exclusiva</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- NOSOTROS -->
+    <section class="section" id="nosotros">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Quiénes somos</h2>
+                <p class="section-subtitle">Maison Essence</p>
+            </div>
+            <div class="about-box">
+                <p>
+                    Somos distribuidores de fragancias en <strong>Bachiniva, Chihuahua</strong>.
+                    Ofrecemos perfumes <strong>originales</strong> de marcas reconocidas, con certificado
+                    y un chequeo cuidadoso de cada fragancia.
+                </p>
+                <p>
+                    Realizamos pedidos dentro y fuera de Bachiniva, y nos extendemos a todo el estado
+                    de Chihuahua. La idea es que elijas con calma, cotices en el sitio y concretes tu pedido de forma directa y sencilla.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq" style="padding-top:0">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Preguntas frecuentes</h2>
+            </div>
+            <div class="faq-list">
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question" onclick="toggleFaq(this)">
+                        <span>¿Los perfumes son originales?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí. Trabajamos con marcas reconocidas y cada perfume cuenta con certificado, obtenido tras un chequeo riguroso de la fragancia.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question" onclick="toggleFaq(this)">
+                        <span>¿Cómo funciona la cotización / pedido?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Agrega los perfumes al carrito de cotización para ver precios de forma clara. Cuando tengas tu lista, envías el mensaje por WhatsApp al proveedor y con eso se gestiona tu pedido.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question" onclick="toggleFaq(this)">
+                        <span>¿Hacen envíos? ¿A dónde y cuánto tardan?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nos ajustamos a lo que más te convenga. Los pedidos llegan con el proveedor y acordamos un punto medio para la entrega. El tiempo aproximado es de 5 a 10 días hábiles.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question" onclick="toggleFaq(this)">
+                        <span>¿Qué pasa si no encuentro un perfume?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Puedes avisarnos para intentar agregarlo después a nuestro catálogo, o te sugerimos opciones parecidas de lo que ya manejamos.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question" onclick="toggleFaq(this)">
+                        <span>¿Qué pasa si el pedido llega dañado o incorrecto?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nos aseguramos de que el pedido salga en buen estado. Si hubiera un percance, te contactamos para ver cómo proceder: reposición o la opción que corresponda.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-main">MAISON</span>
+                        <span class="logo-sub">Essence</span>
+                    </a>
+                    <p>Un universo de fragancias seleccionadas. Experimenta. Descubre. Define tu esencia.</p>
+                </div>
+                <div>
+                    <h4>Colecciones</h4>
+                    <div class="footer-links">
+                        <a href="pages/disenador.html">Diseñador</a>
+                        <a href="pages/arabes.html">Árabes</a>
+                        <a href="pages/dama.html">Dama</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Contacto</h4>
+                    <div class="footer-links">
+                        <a href="https://wa.me/526251220282" target="_blank" rel="noopener">WhatsApp</a>
+                        <a href="https://www.instagram.com/maison_esscence/" target="_blank" rel="noopener">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2026 Maison Essence. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- CART DRAWER -->
+    <div class="cart-overlay" id="cart-overlay" onclick="closeCart()"></div>
+    <aside class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3>Tu cotización</h3>
+            <button class="cart-close" onclick="closeCart()" aria-label="Cerrar">✕</button>
+        </div>
+        <div class="cart-body">
+            <div class="cart-empty" id="cart-empty">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <path d="M16 10a4 4 0 01-8 0" />
+                </svg>
+                <p>Aún no has agregado perfumes</p>
+                <p style="font-size:0.85rem;margin-top:8px">Explora el catálogo y agrega los que te gusten</p>
+            </div>
+            <div id="cart-items"></div>
+        </div>
+        <div class="cart-footer" id="cart-footer" style="display:none">
+            <div class="cart-total">
+                <span>Total estimado</span>
+                <span id="cart-total-value">Por cotizar</span>
+            </div>
+            <button class="btn btn-primary btn-full" onclick="sendWhatsAppQuote()">
+                Enviar cotización por WhatsApp
+            </button>
+            <p style="text-align:center;font-size:0.75rem;color:var(--gray);margin-top:12px">
+                Se abrirá WhatsApp con tu lista lista para enviar
+            </p>
+        </div>
+    </aside>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
